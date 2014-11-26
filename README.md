@@ -1,4 +1,4 @@
 frost-ogre
 ==========
 
-Game framework, using the ogre graphics engine, implementing XML based prefabs and eventually a Lua scripting api.
+Cross-platform game framework, using the ogre graphics engine, implementing XML based prefabs and eventually a Lua based scripting api.
