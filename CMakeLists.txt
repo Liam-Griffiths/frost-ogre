@@ -1,5 +1,5 @@
 # Change this to your project's name
-set(PROJECT_NAME "ogre-sdl2-test")
+set(PROJECT_NAME "frost-ogre")
 
 project(${PROJECT_NAME} CXX C)
 cmake_minimum_required(VERSION 2.8)

@@ -10,44 +10,6 @@
 #include <OgreRenderWindow.h>
 
 
-void createQuad (Ogre::SceneManager* sceneMgr)
-{
-	Ogre::ManualObject* manual = sceneMgr->createManualObject();
-
-	// Use identity view/projection matrices to get a 2d quad
-	manual->setUseIdentityProjection(true);
-	manual->setUseIdentityView(true);
-
-	Ogre::MaterialPtr material = Ogre::MaterialManager::getSingleton().create("mat", Ogre::ResourceGroupManager::DEFAULT_RESOURCE_GROUP_NAME);
-	material->getTechnique(0)->getPass(0)->setLightingEnabled(false);
-	manual->begin(material->getName());
-
-	manual->position(-1, -1, 0.0);
-	manual->textureCoord(0, 1);
-	manual->colour(Ogre::ColourValue(1,0,0,1));
-
-	manual->position(1, -1, 0.0);
-	manual->textureCoord(1, 1);
-	manual->colour(Ogre::ColourValue(1,1,0,1));
-
-	manual->position(1, 1, 0.0);
-	manual->textureCoord(1, 0);
-	manual->colour(Ogre::ColourValue(1,1,1,1));
-
-	manual->position(-1, 1, 0.0);
-	manual->textureCoord(0, 0);
-	manual->colour(Ogre::ColourValue(1,0,1,1));
-
-	manual->quad(0,1,2,3);
-
-	manual->end();
-
-	manual->setBoundingBox(Ogre::AxisAlignedBox::BOX_INFINITE);
-
-	sceneMgr->getRootSceneNode()->createChildSceneNode()->attachObject(manual);
-}
-
-
 int main()
 {
 
@@ -57,7 +19,7 @@ int main()
   
   // Create an application window with the following settings:
   window = SDL_CreateWindow( 
-    "An SDL2 window",                  //    window title
+    "frost-ogre",                  //    window title
     SDL_WINDOWPOS_UNDEFINED,           //    initial x position
     SDL_WINDOWPOS_UNDEFINED,           //    initial y position
     640,                               //    width, in pixels
@@ -99,12 +61,12 @@ int main()
 	}
 
     Ogre::NameValuePairList params;
-    params.insert(std::make_pair("title", "OGRE Window"));
+    params.insert(std::make_pair("title", "frost-ogre"));
     params.insert(std::make_pair("FSAA", "0"));
     params.insert(std::make_pair("vsync", "false"));
     params.insert(std::make_pair("parentWindowHandle",  winHandle));
 
-	Ogre::RenderWindow* ogreWindow = Ogre::Root::getSingleton().createRenderWindow("OGRE Window", 640, 480, false, &params);
+	Ogre::RenderWindow* ogreWindow = Ogre::Root::getSingleton().createRenderWindow("frost-ogre", 640, 480, false, &params);
 	ogreWindow->setVisible(true);
 	
 	Ogre::SceneManager* sceneMgr = root->createSceneManager(Ogre::ST_GENERIC);
@@ -112,7 +74,6 @@ int main()
 	Ogre::Viewport* vp = ogreWindow->addViewport(camera);
 	vp->setBackgroundColour(Ogre::ColourValue(1,0,0,1));
 
-	createQuad(sceneMgr);
 
 
 while(1){
