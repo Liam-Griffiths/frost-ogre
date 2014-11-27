@@ -8,6 +8,7 @@
 
 #include <SDL.h>
 #include <SDL_syswm.h>
+#include <Ogre.h>
 #include <OgreRoot.h>
 #include <OgreManualObject.h>
 #include <OgreRenderWindow.h>

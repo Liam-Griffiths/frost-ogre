@@ -1,0 +1,27 @@
+material Tree01
+{
+technique
+
+	{
+		pass
+		{
+		lighting off
+		scene_blend alpha_blend
+		depth_write off
+
+			texture_unit
+			
+			{
+			
+			texture elm.png
+	
+			colour_op modulate
+								
+			}
+
+
+		}
+
+	}
+
+}
