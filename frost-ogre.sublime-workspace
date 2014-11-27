@@ -8,35 +8,37 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "source/includes/XmlParser.h",
 			"settings":
 			{
-				"buffer_size": 379,
+				"buffer_size": 61,
+				"line_ending": "Unix",
+				"name": "class XmlParser"
+			}
+		},
+		{
+			"file": "source/includes/Headers.h",
+			"settings":
+			{
+				"buffer_size": 214,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/XmlParser.cpp",
+			"settings":
+			{
+				"buffer_size": 77,
+				"line_ending": "Unix",
+				"name": "#include \"includes/XmlParser.h\""
 			}
 		},
 		{
 			"file": "source/main.cpp",
 			"settings":
 			{
-				"buffer_size": 2588,
+				"buffer_size": 2422,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "CMakeLists.txt",
-			"settings":
-			{
-				"buffer_size": 1892,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "cmake/FindOGRE.cmake",
-			"settings":
-			{
-				"buffer_size": 22890,
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -76,15 +78,22 @@
 	"expanded_folders":
 	[
 		"/home/liam/Desktop/Projects/frost-ogre",
-		"/home/liam/Desktop/Projects/frost-ogre/source"
+		"/home/liam/Desktop/Projects/frost-ogre/source",
+		"/home/liam/Desktop/Projects/frost-ogre/source/includes"
 	],
 	"file_history":
 	[
+		"/home/liam/Desktop/Projects/frost-ogre/README.md",
+		"/home/liam/Desktop/Projects/frost-ogre/.gitignore",
+		"/home/liam/Desktop/Projects/rob-ogre-base/include/stdafx.h",
+		"/home/liam/Desktop/Projects/rob-ogre-base/src/stdafx.cpp",
+		"/home/liam/Desktop/Projects/frost-ogre/cmake/FindOGRE.cmake",
+		"/home/liam/Desktop/Projects/frost-ogre/CMakeLists.txt",
 		"/home/liam/etc/pulse/daemon.conf"
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -121,24 +130,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "source/includes/XmlParser.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 379,
+						"buffer_size": 61,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								203,
-								203
+								61,
+								61
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"auto_name": "class XmlParser",
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -149,19 +159,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "source/main.cpp",
+					"file": "source/includes/Headers.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2588,
+						"buffer_size": 214,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1433,
-								1433
+								214,
+								214
 							]
 						],
 						"settings":
@@ -169,68 +179,67 @@
 							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 408.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "source/XmlParser.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								75
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#include \"includes/XmlParser.h\"",
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "CMakeLists.txt",
+					"buffer": 3,
+					"file": "source/main.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1892,
+						"buffer_size": 2422,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1892,
-								1892
+								83,
+								83
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/C++/C++.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "cmake/FindOGRE.cmake",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 22890,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								19810,
-								19810
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1785.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -246,8 +255,8 @@
 						"selection":
 						[
 							[
-								1094,
-								1094
+								20,
+								20
 							]
 						],
 						"settings":
@@ -256,7 +265,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1326.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
