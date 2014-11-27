@@ -1,7 +1,12 @@
-frost-ogre
+Frost-Ogre
 ==========
 
-Cross-platform game framework, using the ogre graphics engine, implementing XML based prefabs and eventually a Lua based scripting api.
+Cross-platform game framework, using the ogre graphics engine built on SDL, implementing XML based prefabs and eventually a Lua based scripting api.
+
+Status
+==========
+
+Incomplete.
 
 Issues
 ==========
